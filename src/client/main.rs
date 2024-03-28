@@ -3,7 +3,7 @@ use clap::{Parser, Subcommand};
 
 use authentication::auth_client::AuthClient;
 use authentication::{SignInRequest, SignOutRequest, SignUpRequest};
-use tonic::{transport::Channel, IntoRequest};
+use tonic::transport::Channel;
 use tonic::{Request, Response};
 
 use crate::authentication::{SignInResponse, SignOutResponse, SignUpResponse, StatusCode};
